@@ -317,6 +317,21 @@ section .uma-fracao ion-icon{
     cursor: pointer;
 }
 
+.pedido{
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+}
+.img-default-40{
+    width: 40%;
+}
+.img-default-30{
+    width: 30%;
+}
+.img-default-20{
+    width: 20%;
+}
+
 /*cores-texto*/
 .txt-orange-1 {
     color: rgb(185, 68, 0) !important;
