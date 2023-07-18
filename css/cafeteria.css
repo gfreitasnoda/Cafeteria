@@ -35,6 +35,9 @@ header nav {
     text-align: center;
 
 }
+header .btn-mobile{
+    display: none;
+}
 
 header nav ul {
     /*remover os marcadores*/
