@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Cafeteria</title>
     <link rel="stylesheet" href="css/cafeteria.css" />
+    <link rel="stylesheet" href="css/cafeteria-mobile.css">
   </head>
-  <body>
+  <body onload="closeMenu()">
     <header>
+      <a href="javascript:void" class="btn-mobile">
+        <ion-icon name="menu-outline"></ion-icon>
+      </a>
       <nav>
         <ul>
           <li class="nav-header"><a href="index.html">home</a></li>
@@ -33,24 +37,29 @@
         <h2 class="sub-h2 margem-top-base em-linha"> Nosso Cardápio </h2>
         <div>
         <ul class="em-linha tirar-marcador">
-          <li class="cat-cardapio"><a href="javascript:void">
+          <li class="cat-cardapio">
+          <a href="javascript:void" onclick="mudaItem('cafes')">
             <ion-icon name="cafe-outline"></ion-icon>
             Cafés
             </a>
           </li>
-          <li class="cat-cardapio"><a href="javascript:void">
+          <li class="cat-cardapio">
+          <a href="javascript:void" onclick="mudaItem('bolos')">
             <ion-icon name="server-outline"></ion-icon>
             Bolos
           </a></li>
-          <li class="cat-cardapio"><a href="javascript:void">
+          <li class="cat-cardapio">
+          <a href="javascript:void" onclick="mudaItem('doces')">
             <ion-icon name="ice-cream-outline"></ion-icon>
             Doces
           </a></li>
-          <li class="cat-cardapio"><a href="javascript:void">
+          <li class="cat-cardapio">
+          <a href="javascript:void" onclick="mudaItem('bebidas')">
             <ion-icon name="beer-outline"></ion-icon>
             Bebidas
           </a></li>
-          <li class="cat-cardapio"><a href="javascript:void">
+          <li class="cat-cardapio">
+            <a href="javascript:void" onclick="mudaItem('salgado')">
             <ion-icon name="pizza-outline"></ion-icon>
             Salgados
           </a></li>
@@ -431,5 +440,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/cafeteria.js"></script> 
   </body>
 </html>
